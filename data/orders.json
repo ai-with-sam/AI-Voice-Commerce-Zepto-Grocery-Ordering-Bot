@@ -1,0 +1,164 @@
+[
+  {
+    "time": "2026-04-22 20:36:21",
+    "items": [
+      {
+        "name": "White Bread",
+        "qty": 2
+      },
+      {
+        "name": "Apple Shimla",
+        "qty": 3
+      }
+    ],
+    "total": "\u20b9328",
+    "screenshot": "screenshot_20260422_203621.png"
+  },
+  {
+    "time": "2026-04-24 19:50:59",
+    "items": [
+      {
+        "name": "Apple Shimla",
+        "qty": 1
+      },
+      {
+        "name": "Aavin Premium Full Cream Fresh Milk",
+        "qty": 2
+      },
+      {
+        "name": "White Bread",
+        "qty": 3
+      }
+    ],
+    "total": "\u20b9289",
+    "screenshot": "screenshot_20260424_195059.png"
+  },
+  {
+    "time": "2026-04-24 19:58:22",
+    "items": [
+      {
+        "name": "Aavin Premium Full Cream Fresh Milk",
+        "qty": 2
+      },
+      {
+        "name": "Potato",
+        "qty": 3
+      }
+    ],
+    "total": "\u20b9158",
+    "screenshot": "screenshot_20260424_195821.png"
+  },
+  {
+    "time": "2026-04-24 21:39:32",
+    "items": [
+      {
+        "name": "Apple Shimla",
+        "qty": 2
+      },
+      {
+        "name": "White Bread",
+        "qty": 3
+      }
+    ],
+    "total": "\u20b9303",
+    "screenshot": "screenshot_20260424_213932.png"
+  },
+  {
+    "time": "2026-04-25 16:13:56",
+    "items": [
+      {
+        "name": "Aavin Premium Full Cream Fresh Milk",
+        "qty": 2
+      },
+      {
+        "name": "White Bread",
+        "qty": 3
+      },
+      {
+        "name": "Apple Shimla",
+        "qty": 2
+      }
+    ],
+    "total": "\u20b9357",
+    "screenshot": "screenshot_20260425_161356.png"
+  },
+  {
+    "time": "2026-04-25 16:31:24",
+    "items": [
+      {
+        "name": "Apple Shimla",
+        "qty": 2
+      },
+      {
+        "name": "Aavin Premium Full Cream Fresh Milk",
+        "qty": 3
+      },
+      {
+        "name": "White Bread",
+        "qty": 4
+      }
+    ],
+    "total": "\u20b9430",
+    "screenshot": "screenshot_20260425_163123.png"
+  },
+  {
+    "time": "2026-04-25 16:37:18",
+    "items": [
+      {
+        "name": "Apple Shimla",
+        "qty": 3
+      },
+      {
+        "name": "White Bread",
+        "qty": 1
+      },
+      {
+        "name": "Aavin Premium Full Cream Fresh Milk",
+        "qty": 2
+      }
+    ],
+    "total": "\u20b9345",
+    "screenshot": "screenshot_20260425_163718.png"
+  },
+  {
+    "time": "2026-04-25 16:49:56",
+    "items": [
+      {
+        "name": "Aavin Premium Full Cream Fresh Milk",
+        "qty": 1
+      },
+      {
+        "name": "Apple Shimla",
+        "qty": 3
+      },
+      {
+        "name": "White Bread",
+        "qty": 2
+      }
+    ],
+    "total": "\u20b9358",
+    "screenshot": "screenshot_20260425_164956.png"
+  },
+  {
+    "time": "2026-04-26 19:19:50",
+    "items": [
+      {
+        "name": "White Bread",
+        "qty": 1
+      }
+    ],
+    "total": "\u20b993",
+    "screenshot": "screenshot_20260426_191949.png"
+  },
+  {
+    "time": "2026-04-26 19:29:25",
+    "items": [
+      {
+        "name": "White Bread",
+        "qty": 1
+      }
+    ],
+    "total": "\u20b993",
+    "screenshot": "screenshot_20260426_192925.png"
+  }
+]
