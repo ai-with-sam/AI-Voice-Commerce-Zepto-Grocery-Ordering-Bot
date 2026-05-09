@@ -85,9 +85,9 @@ python bot.py
 
 ---
 
-## Demo
+## Demo Video and Screenshots
 
-(Add your demo GIF/video here)
+https://drive.google.com/drive/folders/1a29drqFaVNjFkRSelEZzGIM-GPPzs7Wg?usp=sharing
 
 ---
 
