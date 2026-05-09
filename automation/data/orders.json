@@ -244,5 +244,22 @@
     ],
     "total": "\u20b9229",
     "screenshot": "screenshot_20260429_205944.png"
+  },
+  {
+    "time": "2026-05-08 18:34:59",
+    "items": [
+      {
+        "name": "Apple Shimla",
+        "qty": 1
+      },
+      {
+        "name": "White Bread",
+        "qty": 3
+      }
+    ],
+    "total": "\u20b9293",
+    "cart_screenshot": "cart_20260508_183450.png",
+    "total_screenshot": "total_20260508_183450.png",
+    "qr_screenshot": "screenshot_20260508_183458.png"
   }
 ]

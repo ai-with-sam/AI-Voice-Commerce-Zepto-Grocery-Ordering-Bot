@@ -323,7 +323,7 @@ def run_zepto(items, user_id):
 
         page.wait_for_timeout(2000)
 
-        page.locator("//div[contains(text(),'Home')]").click()
+        page.locator("(//span[contains(text(),'Home')])[last()]").click()
         page.wait_for_timeout(2000)
         print("Chosen the Home Location")
 
@@ -469,7 +469,7 @@ def run_zepto(items, user_id):
 
         # Screenshot
             # Screenshot
-        qr_screenshot = f"screenshot_{datetime.now().strftime('%Y%m%d_%H%M%S')}.png"
+        qr_screenshot = f"qr_{datetime.now().strftime('%Y%m%d_%H%M%S')}.png"
         page.screenshot(path=qr_screenshot)
 
         # file_name = f"screenshot_{datetime.now().strftime('%Y%m%d_%H%M%S')}.png"
