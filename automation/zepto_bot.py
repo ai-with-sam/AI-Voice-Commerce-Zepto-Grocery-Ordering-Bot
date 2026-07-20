@@ -96,8 +96,8 @@ def extract_items(text):
 
     # 🔥 Normalize common speech/whisper variations
     replacements = {
-        r"(apple.*(shimla|simla|shima|simula))": "apple shimla",
-        r"\bapple\b": "apple shimla",
+        r"(apple.*(shimla|simla|shima|simula))": "apple washington",
+        r"\bapple\b": "apple washington",
         r"(milk|milc|mulk)": "Aavin Premium Full Cream Fresh Milk",
         r"(bread|bred|brad)": "white bread",
         r"(egg|eggs|eg)": "eggs",
@@ -267,7 +267,7 @@ async def handle_text(update: Update, context: ContextTypes.DEFAULT_TYPE):
                 await context.bot.send_photo(
                     chat_id=user_id,
                     photo=photo,
-                    caption="📸 Scan & Pay"
+                    caption="📸 Scan & Pay soon. QR is valid for 3 mins only !"
                 )
 
             await update.message.reply_text("⏳ Waiting for payment...")
@@ -350,7 +350,8 @@ def run_zepto(items, user_id):
                         print("No more items OR button not visible")
                         
                         # Exit cart
-                        page.locator("//button[contains(@aria-label, 'Back Icon')]").click()
+                        #page.locator("//button[contains(@aria-label, 'Back Icon')]").click()
+                        page.locator("//div[contains(@class, 'flex')]/button/img[contains(@alt, 'cart back')]").click()
                         break
                             
         except Exception as e:
@@ -358,7 +359,7 @@ def run_zepto(items, user_id):
 
         page.get_by_test_id("searchBar").click()
 
-        search_box = page.locator("//div//input[contains(@placeholder, 'Search')]")
+        search_box = page.locator("//div/a[contains(@aria-label, 'Search')]")
         for item_data in items:
             item = item_data["name"]
             quantity = item_data["qty"]
@@ -414,7 +415,7 @@ def run_zepto(items, user_id):
 
         #Get Items Screenshot
 
-        cart_items = page.locator("//p[contains(text(), 'Delivery in')]")
+        cart_items = page.locator("//div/span[contains(text(), 'Delivering in')]")
         cart_items.wait_for(state="visible")
         cart_items.scroll_into_view_if_needed()
 
@@ -445,7 +446,8 @@ def run_zepto(items, user_id):
         # page.wait_for_load_state("networkidle")
         # page.wait_for_timeout(3000)
 
-        upi_option = page.locator("//div//article[contains(text(), 'UPI')]")
+        #upi_option = page.locator("//div//article[contains(text(), 'UPI')]")
+        upi_option = page.locator("//div//h3[contains(text(), 'UPI')]")
 
         upi_option.wait_for(state="visible", timeout=10000)
 
@@ -457,7 +459,8 @@ def run_zepto(items, user_id):
 
         print("Clicked UPI")
 
-        qr_option = page.locator("//div//article[contains(text(), 'QR Code')]")
+        #qr_option = page.locator("//div//article[contains(text(), 'QR Code')]")
+        qr_option = page.locator("//div/span[contains(text(), 'QR Code')]")
 
         qr_option.wait_for(state="visible", timeout=10000)
         qr_option.scroll_into_view_if_needed()
@@ -465,7 +468,11 @@ def run_zepto(items, user_id):
 
         print("Clicked QR Code")
 
-        page.locator("//div//article[contains(text(), 'Scan QR and Pay')]").wait_for()
+        qr_image = page.locator("//div//span[contains(text(), 'TO PAY')]")
+        qr_image.wait_for(state="visible", timeout=10000)
+        qr_image.scroll_into_view_if_needed()
+
+        #page.locator("//div//article[contains(text(), 'Scan QR and Pay')]").wait_for()
 
         # Screenshot
             # Screenshot

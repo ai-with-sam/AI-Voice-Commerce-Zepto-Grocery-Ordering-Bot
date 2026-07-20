@@ -261,5 +261,52 @@
     "cart_screenshot": "cart_20260508_183450.png",
     "total_screenshot": "total_20260508_183450.png",
     "qr_screenshot": "screenshot_20260508_183458.png"
+  },
+  {
+    "time": "2026-07-20 13:17:02",
+    "items": [
+      {
+        "name": "White Bread",
+        "qty": 2
+      }
+    ],
+    "total": "\u20b9114",
+    "cart_screenshot": "cart_20260720_131700.png",
+    "total_screenshot": "total_20260720_131701.png",
+    "qr_screenshot": "qr_20260720_131702.png"
+  },
+  {
+    "time": "2026-07-20 13:25:39",
+    "items": [
+      {
+        "name": "White Bread",
+        "qty": 2
+      }
+    ],
+    "total": "\u20b9114",
+    "cart_screenshot": "cart_20260720_132536.png",
+    "total_screenshot": "total_20260720_132537.png",
+    "qr_screenshot": "qr_20260720_132539.png"
+  },
+  {
+    "time": "2026-07-20 13:29:19",
+    "items": [
+      {
+        "name": "Aavin Premium Full Cream Fresh Milk",
+        "qty": 1
+      },
+      {
+        "name": "Apple Washington",
+        "qty": 3
+      },
+      {
+        "name": "White Bread",
+        "qty": 2
+      }
+    ],
+    "total": "\u20b9474",
+    "cart_screenshot": "cart_20260720_132916.png",
+    "total_screenshot": "total_20260720_132916.png",
+    "qr_screenshot": "qr_20260720_132919.png"
   }
 ]
